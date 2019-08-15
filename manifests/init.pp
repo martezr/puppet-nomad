@@ -55,7 +55,7 @@ class nomad (
   Optional[Stdlib::HTTPUrl]   $download_url          = undef,
   String[1]                   $download_url_base     = $nomad::params::download_url_base,
   Array                       $extra_groups          = [],
-  Optional[String[1]]         $extra_options         = '',
+  Optional[String[1]]         $extra_options         = undef,
   String[1]                   $group                 = 'nomad',
   String[1]                   $init_style            = $nomad::params::init_style,
   String[1]                   $install_method        = $nomad::params::install_method,
